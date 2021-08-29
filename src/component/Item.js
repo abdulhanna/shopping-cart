@@ -26,7 +26,7 @@ const Item = ({id,title,price,description,img,quantity}) =>{
                         </div>
                     </div>
                     <hr/>
-    </>)
+    </>);
 }
 
 export default Item

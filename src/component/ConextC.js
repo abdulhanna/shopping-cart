@@ -7,7 +7,7 @@ const ContextCart = () =>{
     // const [item,setItem] =useState(products);
  
 
-     const {totalItem ,item,clearCart} = useContext(CartContext);
+     const {totalItem,totalAmount ,item,clearCart} = useContext(CartContext);
     return(<>
          <header>
             <div className="continue-shopping">
@@ -38,13 +38,13 @@ const ContextCart = () =>{
                 </div>
             </div>
             <div className="card-total">
-            <h3>Cart total:<span>22000$</span></h3>
+            <h3>Cart total:<span>{totalAmount}</span></h3>
             <button>check out</button>
             <button className="clear-cart" onClick={clearCart}>Clear cart</button>
 
             </div>
         </section>
-    </>)
+    </>);
 
-}
+};
 export default ContextCart
